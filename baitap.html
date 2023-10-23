@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+    [class*="col-"] {
+        float: left;
+        padding: 15px;
+    }
+
+.body{
+    font-family: "Lucida Sans", sans-serif; 
+}
+.all{
+    padding: 10px;
+    background-color: rgb(211, 215, 215);
+}
+.main h1{
+    margin-left: 0px;
+}
+.main h3{
+    margin-left: 0px;
+}
+.left ul{
+    list-style-type: none;
+    padding: 10px;
+    margin-left: -25px;
+}
+.left li{
+    margin-bottom: 10px;
+
+}
+.right {
+    margin-top: 40px;
+    background-color: rgb(178, 240, 240);
+}
+.end {
+    background-color: rgb(211, 215, 215);
+    text-align: center;
+}
+
+@media only screen and (min-width:500px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 75%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 50%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    .phan3{
+        width: 100%;
+    }
+}
+@media only screen and ( min-width:800px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 23%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+@media only screen and (max-width: 500px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 100%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 100%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 10%;}
+
+    .phan1 {
+        width: 100%;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="main">
+        <h1>Cinque Terre</h1>
+        <h3>Resize the browser window</3>
+        <div>
+            <div class="col-3 left">
+                <ul>
+                    <li>The Walk <hr></li>
+                    <li>Transport <hr></li>
+                    <li>History <hr></li>
+                    <li>Gallery <hr></li>
+                </ul>
+            </div>
+            <div class="col-6 content">
+                <h2>The Walk</h2>
+                <header>The walk from Monterosso to Riomaggiore will take you approximately two hours, give or take an hour depending on the weather conditioms and your physical shape.</header>
+                <img src="Screenshot 2023-10-23 132627.png" alt="" width="100%" style="margin-top: 10px;">
+            </div>
+            <div class="col-3 right">
+<h1>What?</h1>
+                <header>Cinque Terre comprises five villages: Monterosso, Vernazza, Corniglia, Manarola, and Riomaggiore.</header>
+                <h1>Where?</h1>
+                <header>On teh northwest cost of the Italian Riviera, north of the city La Spezia</header>
+                <h1>Price?</h1>
+                <header>The Walk is free!</header>
+            </div>
+        </div>
+        <div class="col-12 end">
+            <header>This web page is a part of a demonstration of fluid web design made by me.com. Resize the browser window to see the content respond to the resizing. </header>
+        </div>
+    </div>
+</body>
+</html>
